@@ -13,7 +13,7 @@ for i in dirs:
         for j in nd:
             pth = "{}/{}".format(i,j)
             sp = pth.split('.')
-            sp[-1] = sp[-1].upper()
+            sp[-1] = sp[-1].lower()
             npth = '.'.join(sp)
             print(npth)
             print(os.rename(pth, npth))
